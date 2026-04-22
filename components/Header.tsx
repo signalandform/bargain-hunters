@@ -3,7 +3,7 @@ import Link from "next/link";
 import { brand, site } from "@/lib/site";
 
 const logoPanelClass =
-  "inline-flex rounded-xl bg-gradient-to-b from-[#1a1814] to-[#0c0b09] shadow-[0_12px_36px_-14px_rgba(0,0,0,0.4),inset_0_1px_0_rgba(255,255,255,0.06)] ring-1 ring-white/10";
+  "inline-flex rounded-xl bg-black shadow-[0_12px_36px_-14px_rgba(0,0,0,0.45)] ring-1 ring-white/15";
 
 const nav = [
   { href: "#visit", label: "Visit" },
@@ -26,7 +26,7 @@ export function Header() {
             width={brand.logoWidth}
             height={brand.logoHeight}
             priority
-            className="h-16 w-auto object-contain object-left sm:h-[4.5rem]"
+            className="h-12 w-auto max-w-[min(220px,70vw)] object-contain object-left sm:h-14 sm:max-w-[260px]"
           />
         </Link>
         <nav className="flex items-center gap-1 sm:gap-4" aria-label="Page sections">
@@ -34,7 +34,7 @@ export function Header() {
             <a
               key={item.href}
               href={item.href}
-              className="rounded-md px-2 py-1.5 text-sm font-medium text-[var(--ink-muted)] transition hover:bg-black/[0.04] hover:text-[var(--ink)] sm:px-3"
+              className="rounded-md px-2 py-1.5 text-sm font-medium text-[var(--ink-muted)] transition hover:bg-[var(--accent)]/10 hover:text-[var(--ink)] sm:px-3"
             >
               {item.label}
             </a>

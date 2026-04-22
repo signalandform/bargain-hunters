@@ -62,7 +62,7 @@ export function SocialSection() {
                 href={site.social[key]}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-3 rounded-2xl border border-[var(--border)] bg-[var(--card)] px-5 py-4 text-sm font-semibold text-[var(--ink)] shadow-sm transition hover:border-[var(--accent)]/40 hover:shadow-md"
+                className="inline-flex items-center gap-3 rounded-2xl border border-[var(--border)] bg-[var(--card)] px-5 py-4 text-sm font-semibold text-[var(--ink)] shadow-sm transition hover:border-[var(--accent)]/50 hover:shadow-md"
               >
                 <SocialIcon network={key} />
                 {labels[key]}

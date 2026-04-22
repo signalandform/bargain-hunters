@@ -2,11 +2,11 @@
  * Edit this file to update copy, hours, and links for the live site.
  */
 
-/** Logo asset in /public (square PNG, transparent background). */
+/** Logo in /public — wide horizontal PNG on black. */
 export const brand = {
   logoSrc: "/bhlogofinal.png",
   logoWidth: 1024,
-  logoHeight: 1024,
+  logoHeight: 406,
 } as const;
 
 export const site = {

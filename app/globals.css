@@ -1,14 +1,18 @@
 @import "tailwindcss";
 
 :root {
-  --paper: #f6f1e8;
-  --ink: #1c1914;
-  --ink-muted: #4a4439;
-  --accent: #2d4a3e;
-  --accent-hover: #243d32;
-  --highlight: #c45c3a;
-  --card: #fffcf7;
-  --border: rgba(28, 25, 20, 0.12);
+  /* Brand (matches logo): cyan, lime, red */
+  --paper: #eef3f6;
+  --ink: #0f1419;
+  --ink-muted: #4a5a66;
+  --accent: #00adef;
+  --accent-hover: #0090c9;
+  --accent-secondary: #8cc63f;
+  --accent-secondary-hover: #7ab52e;
+  --highlight: #ed1c24;
+  --card: #ffffff;
+  --border: rgba(15, 20, 25, 0.12);
+  --black: #000000;
 }
 
 @theme inline {
@@ -17,6 +21,7 @@
   --color-ink-muted: var(--ink-muted);
   --color-accent: var(--accent);
   --color-accent-hover: var(--accent-hover);
+  --color-accent-secondary: var(--accent-secondary);
   --color-highlight: var(--highlight);
   --color-card: var(--card);
   --color-border: var(--border);

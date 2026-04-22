@@ -1,7 +1,7 @@
 export function Stars({ className = "" }: { className?: string }) {
   return (
     <div
-      className={`flex gap-0.5 text-amber-500 ${className}`}
+      className={`flex gap-0.5 text-[var(--accent-secondary)] ${className}`}
       aria-hidden
     >
       {Array.from({ length: 5 }).map((_, i) => (
